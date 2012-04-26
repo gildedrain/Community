@@ -1,29 +1,34 @@
 body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; margin:0; background-color:#FFF; background-repeat:repeat-x; background-image: -moz-linear-gradient(top,  rgba(20,41,60,1) 0, rgba(78,146,206,1) 300px, rgba(255,255,255,1) 600px); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0,rgba(20,41,60,1)), color-stop(300px,rgba(78,146,206,1)), color-stop(600px,rgba(255,255,255,1))); /* Chrome,Safari4+ */ background-image: -webkit-linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* Chrome10+,Safari5.1+ */ background-image: -o-linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* Opera 11.10+ */ background-image: -ms-linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* IE10+ */ background-image: linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* W3C */ }
-/*.ie7 body, .ie8 body {background-image:url(../images/bg_tile.jpg); background-repeat:repeat-x;}*/
-/* H2 MENU TITLE + NAV TO APPEAR ON EVERY PAGE */
+.ie7 body, .ie8 body {background-image:url(../images/bg_tile.jpg); background-repeat:repeat-x;}
+/* HIDE STUFF */
+#globalnav, #aside {display:none;}
+/* H2 MENU TITLE + LINKS TO APPEAR ON EVERY PAGE */
 #menutitle {margin:55px 0 0 170px; font-size:3em; color:#FFF; font-weight:300;}
 .community_globalnav {list-style:none; padding:0 0 150px 0; margin:-2em 0 2em 0; text-align:right; background:transparent url(../images/big_arrow.png) no-repeat 780px 40px;}
-/*.ie7 .community_globalnav {float:right;}*/
+.ie7 .community_globalnav {float:right;}
 .community_globalnav li {display:inline-block;}
-/*.ie7 .community_globalnav li {display:block; float:left;}*/
+.ie7 .community_globalnav li {display:block; float:left;}
 .community_globalnav a {color:#fff; display:block; padding:.1em .5em; border:1px solid #888; border-radius:15px; margin:0 .5em 0 0;}
 .community_globalnav .alert {border-radius:5px; border-color:transparent;}
 /* NAV + INTRO BLURB + FLAT NAV */
+.intro {display:block; margin-bottom:2em;}
+.blurb {float:left; text-align:right; margin:0 0 0 2em; font-size:1.3em; clear:right;}
+.ie7 .blurb {margin-top:-150px;}
+.blurb span {display:inline-block; padding:.25em  1em .25em 1em; background:#1799fe; margin:1px; line-height:1.70;  box-shadow:0 1px 6px #555;}
+.blurb em {font-style:normal; color:#fff;}
 .nav {margin-top:-150px;}
 .nav ul {list-style:none;}
 .nav li {line-height:auto;}
 .nav a {background:#f7941d; color:#fff; display:inline-block; padding:.42em  1em .45em 1em; margin:1px; font-weight:500; line-height:1.75; box-shadow:0 1px 6px #555;}
-/*.ie7 .nav a {display:block; float:left; clear:both;}*/
+.nav .top {display:none;}
+.ie7 .nav a {display:block; float:left; clear:both;}
+.ie7 .nav {margin-top:-178px;}
+.ie7 .nav .top {display:none;}
 .nav a:hover {background:#FFF; color:#1799FE;}
-.intro {display:block; margin-bottom:2em;}
-.blurb {float:left; text-align:right; margin:0 0 0 2em; font-size:1.3em; clear:right;}
-/*.ie7 .blurb {margin-top:-150px;}*/
-.blurb span {display:inline-block; padding:.25em  1em .25em 1em; background:#1799fe; margin:1px; line-height:1.70;  box-shadow:0 1px 6px #555;}
-.blurb em {font-style:normal; color:#fff;}
 .nav.flat {float:none; width:100%; position:fixed; top:40px; padding:0; background:#000; margin:0; border-bottom:1px solid rgba(255,255,255,.75);}
 .nav.flat ul {width:970px; padding:10px 0 10px 0; margin:0 auto; text-align:center;}
 .nav.flat li {display:inline-block; margin:5px 10px 5px 10px; padding:0; border:0; text-align:center;}
-/*.ie7 .nav.flat li {display:block; float:left;}*/
+.ie7 .nav.flat li {display:block; float:left;}
 .nav.flat a {display:block; color:#888; text-decoration:none; background:transparent; padding:0; font-weight:300; margin:0; box-shadow:none;}
 .nav.flat a:hover {text-decoration:underline;}
 .nav.flat .noncredit.current, .nav.flat .noncredit:hover {color:#EFB6F1;}
@@ -31,9 +36,10 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .nav.flat .youth.current, .nav.flat .youth:hover {color:#B8E1FF;}
 .nav.flat .degrees.current, .nav.flat .degrees:hover {color:#3399FE;}
 .nav.flat .business.current, .nav.flat .business:hover {color:#F93;}
+.ie7 .nav.flat .top {display:block;}
 /* URGENT ALERTS */
 .alert {background:#ee0000; color:#fff; border-radius:5px; margin:.25em .25em 1em .25em; padding:.5em; border:1px solid transparent;}
-/*.ie7 .alert {display:block; float:left;}*/
+.ie7 .alert {display:block; float:left;}
 .alert:hover {border:1px solid #fff; box-shadow:0 0 20px #fff; text-decoration:none;}
 /* AD COLLECTION */
 .ads {background:#000;}
@@ -44,18 +50,19 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 /* VERTY SECTIONS */
 .section {min-height:600px; border-top:1px solid rgba(255,255,255,.75)}
 .section ul {list-style:none; padding:0;}
-.sectvion li {line-height:2;}
+.section li {line-height:2em;}
 .section a {color:#222;}
 /* section intro box */
 .section_header {background:#000; background-color:rgba(0,0,0,.8); color:#fff; clear:both; padding:.5em .5em .5em .75em; margin:0 0 1em 0;}
-/*.ie7 .section_intro {background:#000;}*/
+.ie7 .section_header {background:#000;}
 .section_header h3 {font-size:1.3em; margin:.25em 0 .25em 0; font-weight:300;}
 .section_header p:first-of-type {margin:0; font-size:1em; margin:.5em 0 .5em 0;}
 .section_header p:nth-of-type(2) {font-style:italic; margin:0; font-size:.8em; margin-bottom:.75em;}
+.ie7 .section_header p {margin:.5em 0 .5em 0;}
 /* common section styles */
 #noncredit, #special, #youth, #business {background-image: -moz-radial-gradient(center top, circle cover,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */background-image: -webkit-gradient(radial, center top, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */background-image: -webkit-radial-gradient(center top, circle cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-radial-gradient(center top, circle cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 12+ */background-image: -ms-radial-gradient(center top, circle cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */background-image: radial-gradient(center top, circle cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */}
-/*.ie7 #noncredit, .ie7 #special, .ie7 #youth, .ie7 #business,*/
-/*.ie8 #noncredit, .ie8 #special, .ie8 #youth, .ie8 #business, {background-image:none !important;}*/
+.ie7 #noncredit, .ie7 #special, .ie7 #youth, .ie7 #business,
+.ie8 #noncredit, .ie8 #special, .ie8 #youth, .ie8 #business, {background-image:none !important;}
 /* individual section styles */
 #noncredit {background-color:#ececfb;}
 #noncredit .contents, #special .contents {column-count:2; -webkit-column-count:2; -moz-column-count:2;}
@@ -65,14 +72,14 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 #youth .contents, #business .contents {column-count:1; -webkit-column-count:1; -moz-column-count:1; float:left; width:310px;}
 #youth {background-color:#5b92a4;}
 #degrees {background-color:#FFF;}
-/*.ie7 #degress, .ie8 #degrees {background-image:none !important;}
-*/#degrees.section .container {background:url(../images/degrees.jpg) no-repeat center 10em;}
+.ie7 #degress, .ie8 #degrees {background-image:none !important;}
+#degrees .container {background:url(../images/degrees.jpg) no-repeat center 10em;}
+.ie7 #degrees .container {height:500px;}
 #degrees .button {color:#FFF; margin:20em 0 3em 5.25em;}
+.ie7 #degrees .button {top:20em; display:block; width:90px; margin-top:20em;}
 #business {background-color:#d8a05a;}
 /* SPECIAL TYPOGRAPHY */
 .new:after {content:'NEW!'; color:#FFF; display:inline-block; background:#ee0000; padding:0 .4em 0 .4em; margin:0 0 0 .75em; font-size:.75em; font-weight:700; line-height:1.75em}
 /* move the main content area up */
 #section {margin-top:-100px;}
-/* HIDE STUFF */
-#globalnav, #aside {display:none;}
-.nav .top {display:none;}
+
