@@ -45,7 +45,7 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .alert:hover {border:1px solid #fff; box-shadow:0 0 20px #fff; text-decoration:none;}
 /* AD COLLECTION */
 .ads {background:#000;}
-.image {position:relative;}
+.image {position:relative;overflow:hidden;}
 .textoverlay a {position:absolute; bottom:6%; left:0; background:#000; background:rgba(0,0,0,.6); padding:.5em;  color:#FFF; line-height:1.5em;}
 .textoverlay.alt a {right:0; text-align:right;}
 .ads strong {font-size:1.5em; font-weight:300;}
@@ -75,14 +75,63 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 #youth {background-color:#5b92a4;}
 #degrees {background-color:#FFF;}
 .ie7 #degress, .ie8 #degrees {background-image:none !important;}
-#degrees .container {background:url(../images/degrees.jpg) no-repeat center 10em;}
 .ie7 #degrees .container {height:500px;}
-#degrees .button {color:#FFF; margin:20em 0 3em 5.25em;}
+#degrees .button {color:#FFF; margin:0em 0 3em 3.5em;}
 .ie7 #degrees .button {top:20em; display:block; width:90px; margin-top:20em;}
 #business {background-color:#d8a05a;}
 /* SPECIAL TYPOGRAPHY */
 .new:after {content:'NEW!'; color:#FFF; display:inline-block; background:#ee0000; padding:0 .4em 0 .4em; margin:0 0 0 .75em; font-size:.75em; font-weight:700; line-height:1.75em}
+.handwritten {font-family:"Nothing You Could Do"; font-size:1.5em; margin-bottom:0;}
 /* move the main content area up */
 #section {margin-top:-100px;}
 
-.handwritten {font-family:"Nothing You Could Do"; font-size:1.25em;}
+@media all and (max-width:960px),(max-width:800px),(max-width:640px){
+.container{width:95%;margin:0;}
+#section,#section.hasmenu{float:none;margin:0;width:100%;padding:0;}
+#aside{position:absolute;top:-300px;left:0;}
+#aside:hover{top:0;}
+body{padding-top:100px;}
+}
+@media all and (max-width:960px){
+#logo {width:150px;}
+.col1{width:20%;}
+.col1dot5{width:25%;}
+.col2{width:30%;}
+.col3{width:45%;}
+.col4{width:95%;}
+.col5{width:95%;}
+.col6{width:95%;}
+#menutitle {margin:.5em 0 0 .25em; }
+.community_globalnav {margin:1em; text-align:left;}
+#siteheader {height:80px;}
+#siteheader form {margin:40px 0 0 170px; float:none;}
+#siteheader form input {float:none;}
+#siteheader #panel {margin:0 0 0 170px;}
+.blurb {width:45%; margin:0 5px 0 5px;}
+.alert {line-height:1.5em; margin:.25em; display:inline-block;}
+#footer {height:auto;}
+.nav ul {margin:0 0 0 0; padding:0;}
+.nav.flat {top:80px;}
+.nav.flat ul {width:100%;}
+.nav.flat li {display:block;}
+.figure {overflow:hidden;}
+}
+@media all and (max-width:640px){
+.col1,.col1dot5,.col2,.col3,.col4,.col5,.col6{width:100%;float:none;clear:both;margin:0;padding:0;}
+.col1 img, .col1dot5 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .container img {width:100%;}
+#degrees .button {display:block; width:95%; margin:0;}
+.left,.right{float:none;}
+.polaroid{display:none;}
+.nav ul {padding:0; margin:0;}
+.nav.flat {display:none !important;}
+.blurb {width:95%;}
+#logo {display:none;}
+#siteheader form {margin:40px 0 0 0px;}
+#siteheader #panel {margin:0px;}
+.nav a {display:block; width:100%; clear:both; margin:0;}
+.blurb {text-align:left; margin:0 .5em 0 .5em; width:100%;}
+#footer li {display:block; line-height:1.5em;}
+.alert {line-height:1.5em; margin:.25em 0 0 0; display:block; width:100%;}
+.ads {display:none !important;}
+}
+.menu ul ul {display: none;}
