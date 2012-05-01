@@ -8,23 +8,24 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .ie7 .community_globalnav {float:right;}
 .community_globalnav li {display:inline-block;}
 .ie7 .community_globalnav li {display:block; float:left;}
-.community_globalnav a {color:#fff; display:block; padding:.1em .5em; border:1px solid #888; border-radius:15px; margin:0 .5em 0 0;}
+.community_globalnav a {color:#fff; display:block; padding:.1em .5em; border:1px solid #888; border-radius:15px; margin:0 .5em 0 0; font-size:.9em;}
 .community_globalnav .alert {border-radius:5px; border-color:transparent;}
 /* NAV + INTRO BLURB + FLAT NAV */
 .intro {display:block; margin-bottom:2em;}
-.blurb {float:left; text-align:right; margin:0 0 0 2em; font-size:1.3em; clear:right;}
+.blurb {float:left; text-align:right; margin:0 5px 0 2em; font-size:1.5em; clear:right;}
+.blurb p { line-height:1.5em;}
 .ie7 .blurb {margin-top:-150px;}
-.blurb span {display:inline-block; padding:.25em  1em .25em 1em; background:#1799fe; margin:1px; line-height:1.70;  box-shadow:0 1px 6px #555;}
+.blurb span {display:inline-block; color:#1799fe; padding:.25em  .5em .25em .5em; background:#000; box-shadow:0 1px 6px #555; line-height:1.3;}
 .blurb em {font-style:normal; color:#fff;}
 .nav {margin-top:-150px;}
 .nav ul {list-style:none;}
 .nav li {line-height:auto;}
-.nav a {background:#f7941d; color:#fff; display:inline-block; padding:.42em  1em .45em 1em; margin:1px; font-weight:500; line-height:1.75; box-shadow:0 1px 6px #555;}
+.nav a {background:#F93; color:#fff; display:inline-block; padding:.25em  .5em .25em .5em; margin:1px; font-weight:400; line-height:1.5; box-shadow:0 1px 6px #555; text-shadow:0 1px 2px #000;}
 .nav .top {display:none;}
 .ie7 .nav a {display:block; float:left; clear:both;}
 .ie7 .nav {margin-top:-178px;}
 .ie7 .nav .top {display:none;}
-.nav a:hover {background:#FFF; color:#1799FE;}
+.nav a:hover {background:#000; color:#1799FE; text-shadow:none;}
 .nav.flat {float:none; width:100%; position:fixed; top:40px; padding:0; background:#000; margin:0; border-bottom:1px solid rgba(255,255,255,.75);}
 .nav.flat ul {width:970px; padding:10px 0 10px 0; margin:0 auto; text-align:center;}
 .nav.flat li {display:inline-block; margin:5px 10px 5px 10px; padding:0; border:0; text-align:center;}
@@ -38,7 +39,8 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .nav.flat .business.current, .nav.flat .business:hover {color:#F93;}
 .ie7 .nav.flat .top {display:block;}
 /* URGENT ALERTS */
-.alert {background:#ee0000; color:#fff; border-radius:5px; margin:.25em .25em 1em .25em; padding:.5em; border:1px solid transparent;}
+.alerts {margin:0 0 -.5em 0; padding:0; line-height:auto;}
+.alert {background:#ee0000; color:#fff; border-radius:5px; margin:0 .25em 0 .25em; padding:.25em .5em .25em .5em; border:1px solid transparent; text-shadow:0 1px 2px #000;}
 .ie7 .alert {display:block; float:left;}
 .alert:hover {border:1px solid #fff; box-shadow:0 0 20px #fff; text-decoration:none;}
 /* AD COLLECTION */
@@ -58,7 +60,7 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .section_header h3 {font-size:1.3em; margin:.25em 0 .25em 0; font-weight:300;}
 .section_header p:first-of-type {margin:0; font-size:1em; margin:.5em 0 .5em 0;}
 .section_header p:nth-of-type(2) {font-style:italic; margin:0; font-size:.8em; margin-bottom:.75em;}
-.ie7 .section_header p {margin:.5em 0 .5em 0;}
+.ie7 .section_header p, .ie8 .section_header p {margin:1em 0 0 0;}
 /* common section styles */
 #noncredit, #special, #youth, #business {background-image: -moz-radial-gradient(center top, circle cover,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */background-image: -webkit-gradient(radial, center top, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */background-image: -webkit-radial-gradient(center top, circle cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-radial-gradient(center top, circle cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 12+ */background-image: -ms-radial-gradient(center top, circle cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */background-image: radial-gradient(center top, circle cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */}
 .ie7 #noncredit, .ie7 #special, .ie7 #youth, .ie7 #business,
@@ -83,3 +85,4 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 /* move the main content area up */
 #section {margin-top:-100px;}
 
+.handwritten {font-family:"Nothing You Could Do"; font-size:1.25em;}
