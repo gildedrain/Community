@@ -85,6 +85,8 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 /* move the main content area up */
 #section {margin-top:-100px;}
 
+.go_back {display:block; color:#fff; height:40px; width:100px; background:transparent url(../images/go_back.png) no-repeat bottom left; position:absolute; top:135px; text-align:center;}
+
 @media all and (max-width:960px),(max-width:800px),(max-width:640px){
 .container{width:95%;margin:0;}
 #section,#section.hasmenu{float:none;margin:0;width:100%;padding:0;}
