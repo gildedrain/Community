@@ -52,7 +52,7 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .textoverlay.alt a {right:0; text-align:right;}
 .ads strong {font-size:1.5em; font-weight:300;}
 /* VERTY SECTIONS */
-.section {min-height:600px; border-top:1px solid rgba(255,255,255,.75)}
+.section {min-height:600px; border-top:1px solid rgba(255,255,255,.75);}
 .section ul {list-style:none; padding:0;}
 .section li {line-height:1.1em; margin-bottom:1em;}
 .section a {color:#222;}
@@ -77,7 +77,7 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .ie7 #degrees .container {height:500px;}
 #degrees .button {color:#FFF; margin:0 0 3em 4em;}
 .ie7 #degrees .button {display:block; width:90px;}
-#business {background-color:#d8a05a;}
+#business {background-color:#d8a05a; margin-bottom:-4em;}
 /* SPECIAL TYPOGRAPHY */
 .new:after {content:'NEW!'; color:#FFF; display:inline-block; background:#ee0000; padding:0 .4em 0 .4em; margin:0 0 0 .75em; font-size:.75em; font-weight:700; line-height:1.75em}
 .handwritten {font-family:"Nothing You Could Do"; font-size:1.5em; margin-bottom:0;}
