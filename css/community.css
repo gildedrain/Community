@@ -6,7 +6,7 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .menu ul ul {display: none;}
 /* H2 MENU TITLE + LINKS TO APPEAR ON EVERY PAGE */
 #menutitle {margin:0; padding-top:1em; font-size:3em; color:#FFF; font-weight:300; text-shadow:0 0 5px #000;}
-.community_globalnav {list-style:none; padding:0 0 150px 0; text-align:right; background:transparent url(../images/big_arrow.png) no-repeat 780px 40px; margin:-2em 0 0 0;}
+.community_globalnav {list-style:none; padding:0 0 150px 0; text-align:right; background:transparent url(../images/big_arrow.png) no-repeat 780px 40px; margin:-3em 0 0 0;}
 .ie7 .community_globalnav {float:right;}
 .community_globalnav li {display:inline-block;}
 .ie7 .community_globalnav li {display:block; float:left;}
@@ -14,7 +14,7 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .community_globalnav .alert {border-radius:5px; border-color:transparent; background:#ee0000;}
 /* NAV + INTRO BLURB + FLAT NAV */
 .intro {display:block; margin:2em 0 1em 0;}
-.blurb {float:left; text-align:right; margin:-6em 0 0 0; font-size:1.5em; clear:right;}
+.blurb {float:left; text-align:right; margin:0em 0 0 0; font-size:1.5em; clear:right;}
 .blurb p { line-height:1.5em;}
 .ie7 .blurb,.ie8 .blurb,.gecko .blurb {font-size:1.25em;}
 .gecko .blurb p {line-height:2em;}
