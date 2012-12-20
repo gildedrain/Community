@@ -2,7 +2,7 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .ie7 body, .ie8 body, .ie9 body {background-image:url(../images/bg_tile.jpg); background-repeat:repeat-x;}
 /* HIDE STUFF */
 #globalnav, #aside {display:none;}
-#main {background:transparent;}
+#main {background:transparent;border:none;box-shadow:none;}
 .menu ul ul {display: none;}
 /* H2 MENU TITLE + LINKS TO APPEAR ON EVERY PAGE */
 #menutitle {margin:0; padding-top:1.25em; font-size:3em; color:#FFF; font-weight:300; text-shadow:0 0 5px #000; }
