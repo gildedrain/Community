@@ -2,7 +2,7 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .ie7 body, .ie8 body, .ie9 body {background-image:url(../images/bg_tile.jpg); background-repeat:repeat-x;}
 /* HIDE STUFF */
 #globalnav, #aside {display:none;}
-#main {background:transparent;border:none;box-shadow:none;}
+.main {background:transparent;border:none;box-shadow:none;}
 .menu ul ul {display: none;}
 /* H2 MENU TITLE + LINKS TO APPEAR ON EVERY PAGE */
 #menutitle {margin:0; padding-top:1.25em; font-size:3em; color:#FFF; font-weight:300; text-shadow:0 0 5px #000; }
@@ -22,7 +22,7 @@ body {font-family:'open sans', gill sans, verdana, sans-serif; font-weight:300; 
 .blurb em {font-style:normal; color:#fff;}
 .ie7 .nav {margin-top:-50px;}
 .nav ul {list-style:none;}
-.nav li {line-height:auto;}
+.nav li {line-height:auto; margin-bottom:0;}
 .nav a {background:#F93; color:#fff; display:inline-block; padding:.25em  .5em .25em .5em; margin:1px; font-weight:400; line-height:1.5; box-shadow:0 1px 6px #555; text-shadow:0 1px 2px #000;}
 .ie7 .nav a {display:block; float:left; clear:both;}
 .nav .top {display:none;}
