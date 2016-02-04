@@ -1,362 +1,254 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title id="pageTitle" runat="server"></title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <!-- GUI framework -->
   <link type="text/css" rel="stylesheet" href="../../gui/css/gui.css" media="all" />
   <link type="text/css" rel="stylesheet" href="../../occ_global/css/occ_global.css" media="all" />
   <link type="text/css" rel="stylesheet" href="../../gui/css/jqueryui.css" media="all" />
   <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Sarina|PT+Mono|Open+Sans+Condensed:300,700,300italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800|Dancing+Script:400,700|Nothing+You+Could+Do|Devonshire|Rock+Salt' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="../../gui/js/modernizr.js"></script>
   <link type="text/css" rel="stylesheet" href="css/community.css" media="all" />
+  <!--[if lt IE 9]><link rel="stylesheet" href="../../occ_global/css/occ_global_ie.css" media="all" /><![endif]-->
+  <!--[if lt IE 9]><link rel="stylesheet" href="../../sites/www/css/community_ie.css" media="all" /><![endif]-->
+  <script type="text/javascript" src="../../gui/js/modernizr.js"></script>
 </head>
 <body id="index">
-  <div id="top">
+<body id="index">
+    <div id="top">
       <div id="emergency">
         <!-- <p>Something happened on the way to the forum when this guy said something to this lady and she stood up and left. and then my mom said she's a pickle. <a href="#" class="button small">More Info</a></p> -->
       </div>
       <div id="announcement">
         <!-- <p>Something happened on the way to the forum when this guy said something to this lady and she stood up and left. and then my mom said she's a pickle. <a href="#" class="button small">More Info</a></p> -->
       </div>
-      <div class="container">
-        <div id="occlogo"><a href="http://www.sunyocc.edu">Onondaga Community College</a></div>
-      </div>
-      <div id="occheaderbg" class="basic js-drawer"></div><!-- header background -->
-      <div class="container">
-        <div class="headernav basic js-drawer">
-          <div>
-            <p class="medium-blue uppercase tap-icon headernav-title js-drawer-toggle">QuickLinks</p>
-            <ul>
-              <li><a href="#" class="white">Main Homepage</a></li>
-              <li><a href="#" class="light-blue">Current Students</a></li>
-              <li><a href="#" class="light-blue secure">Employees</a></li>
-              <li><a href="#" class="white">Maps + Directions</a></li>
-              <li><a href="#" class="white">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="formbox">
-            <form class="labels-inside" action="http://www.sunyocc.edu/search.aspx" id="cse-search-box">
-              <input type="hidden" name="cx" value="009247214289687445570:4z5fbtg2lek" />
-              <input type="hidden" name="cof" value="FORID:11" />
-              <input type="hidden" name="ie" value="UTF-8" />
-              <label for="search" class="hide">I'm looking for...</label>
-              <input id="search" name="q" class="searchbox  js-drawer-open-only" type="text" title="I'm looking for..." value="" /><input name="sa" class="submitbutton" type="submit" value="go" />
-            </form>
-            <p class="medium-grey">Top Searches</p>
-            <ul>
-              <li><a href="#" class="light-blue">Make a Payment</a></li>
-              <li><a href="#" class="light-blue">Financial Aid</a></li>
-              <li><a href="#" class="light-blue">Admission</a></li>
-              <li><a href="#" class="light-blue">Academic Calendar</a></li>
-            </ul>
-          </div>
-          <a href="#" class="close-headernav js-drawer-toggle">close</a>
-
-        </div>
-      </div>
     </div>
+    <div class="header js-drawer row closed clearfix">
+      <div class="container">
+        <div id="occlogo"><a href="http://www.sunyocc.edu">www.sunyocc.edu</a></div>
+        <a href="#menu-open" class="js-drawer-toggle header-menu-opener">Menu</a>
+        <a href="#push-menu-open" class="push-menu-opener toggle-pushmenu bg-light-blue"><span class="white">Menu</span></a>
+        <div class="formbox">
+          <form class="labels-inside" action="http://www.sunyocc.edu/search.aspx" id="cse-search-box">
+            <input name="cx" value="009247214289687445570:4z5fbtg2lek" type="hidden">
+            <input name="cof" value="FORID:11" type="hidden">
+            <input name="ie" value="UTF-8" type="hidden">
+            <label class="hide" for="search" style="display: none;">Search this site...</label>
+            <input name="q" title="I'm looking for..." class="searchbox pale-grey italic" id="search" type="text">
+            <input name="sa" class="submitbutton" value="go" type="submit">
+          </form>
+        </div>
+        <div class="js-drawer-content">
+
+          <div class="column">
+            <p class="header-category">Just for You</p>
+            <ul class="header-list">
+              <li><a href="#" class="pale-grey">Prospective Students</a></li>
+              <li><a href="#" class="pale-grey">Parents &amp; Families</a></li>
+              <li><a href="#" class="pale-grey">Community Members</a></li>
+              <li><a href="#" class="pale-grey">Adult Learners</a></li>
+              <li><a href="#" class="pale-grey">Veterans</a></li>
+              <li><a href="#" class="pale-grey">Businesses</a></li>
+              <li><a href="#" class="pale-grey">Alumni</a></li>
+              <li><a href="#" class="light-blue">Current Students</a></li>
+              <li><a href="#" class="light-blue">Employees</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <p class="header-category">Admission Process</p>
+            <ul class="header-list">
+              <li><a href="#" class="pale-grey">Apply</a></li>
+              <li><a href="#" class="pale-grey">Placement Testing</a></li>
+              <li><a href="#" class="pale-grey">Financial Aid</a></li>
+              <li><a href="#" class="pale-grey">Residence Halls</a></li>
+              <li><a href="#" class="pale-grey">Paying for College</a></li>
+              <li><a href="#" class="pale-grey">Advising &amp; Registration</a></li>
+              <li><a href="#" class="pale-grey">Orientation</a></li>
+            </ul>
+          </div>
+          
+          <div class="column">
+            <p class="header-category">Academics</p>
+            <ul class="header-list">
+              <li><a href="#" class="pale-grey">Degrees, Certificates &amp; Minors</a></li>
+              <li><a href="#" class="pale-grey">College Catalog</a></li>
+              <li><a href="#" class="pale-grey">Academic Calendar</a></li>
+            </ul>
+          </div>
+          
+          <div class="column">
+            <p class="header-category">Other Sites</p>
+            <ul class="header-list">
+              <li><a href="#" class="pale-grey">Lazers Athletics</a></li>
+              <li><a href="#" class="pale-grey">SRC Arena &amp; Events Center</a></li>
+              <li><a href="#" class="pale-grey">Small Business Development</a></li>
+              <li><a href="#" class="pale-grey">Public Safety Training</a></li>
+              <li><a class="supportonondaga pale-orange" href="#">Support Onondaga</a></li>
+            </ul>
+          </div>
+          
+
+          <ul class="precol1 col4 cta">
+            <!-- <li><a class="white livechat" href="#">Live Chat</a></li> -->
+            <li><a class="white" href="#">Schedule Your Visit</a></li>
+            <li><a class="white" href="#">Request Info Packet</a></li>
+            <li><a class="white" href="#">Apply</a></li>
+            <li><a class="white" href="#">Register for Classes</a></li>
+          </ul>
+        
+        </div><!-- //END js-drawer-content -->
+      </div><!-- //END container -->
+    </div><!-- //END header row js-drawer -->
+
+
     <div class="container">
       <!-- MENUTITLE H2 --><h2 id="menutitle">Community</h2>
     </div>
     <div class="main" role="main">
       <!-- COLGRID -->
       <!-- begin sitelet -->
-      <div class="container">
-        <ul class="community_globalnav">
-          <li><a href="/index.aspx?menu=851&collgrid=510&id=1177">Contact Us</a></li>
-          <li><a href="/WorkArea/linkit.aspx?LinkIdentifier=id&ItemID=29028&libID=28940">Course Catalog</a></li>
-          <li><a href="/index.aspx?menu=851&collgrid=510&id=4133" class="alert">Register Now!</a></li>
-        </ul>
-      </div>
-        <!-- INTRO -->
+
+        <!-- BEGIN INTRO -->
         <div class="intro clearfix">
           <div class="container">
-            <div class="blurb"><p><em>As a Community Member, <br />you can take advantage of</em> <br /><span>a <strong><em>wide variety</em></strong> of programs and services </span><br /><em>@ Onondaga Community College</em>.</p></div>
-            <div class="nav clearfix">
-              <ul>
-                <li><a class="scroll top" href="#top">Intro</a></li>
-                <li><a class="scroll noncredit" href="#noncredit">Personal &amp; Professional Development</a></li>
-                <li><a class="scroll special" href="#special">Special Programs, Events &amp; Resources</a></li>
-                <li><a class="scroll youth" href="#youth">Youth &amp; Pre-College Programs</a></li>
-                <li><a class="scroll degrees" href="#degrees">Bachelor's &amp; Master's Degrees</a></li>
-                <li><a class="scroll business" href="#business">Business &amp; Workforce Development</a></li>
-              </ul>
-            </div>
-            <!-- alert collection begins -->
-            <!-- EXAMPLE HTML <p class="alerts"><a href="/index.aspx?menu=851&collgrid=510&id=" class="alert">College for Kids Registration begins 4/24</a><a href="/index.aspx?menu=851&collgrid=510&id=" class="alert">SAT Prep Registration ends 5/15</a><a href="/index.aspx?menu=851&collgrid=510&id=" class="alert">Seniors Go Free!</a></p> -->
-            <!-- END alert collection -->
+            <div class="blurb"><p><em>As a Community Member, you can take advantage of</em> <span>a <strong><em>wide variety</em></strong> of programs and services </span> <br /><em>@ Onondaga Community College.</em></p></div>
           </div>
         </div>
-        <!-- END INTRO -->
+        <!-- // END INTRO -->
 
 
-        <!-- BEGIN ADS -->
-        <div class="ads clearfix">
+        <!-- BEGIN SLIDESHOW -->
+
           <div class="container">
-            <ul class="bg_banners">
+            <ul class="bg_slideshow">
               <li class="col2 bg-dark-red">
-                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="310"/>
-                <a class="white" href="something.com">text</a>
+                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="400"/>
+                <a class="white" href="something.com">text <strong>Something</strong></a>
               </li>
               <li class="col3 bg-dark-grey">
-                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="150"/>
-                <a class="white" href="something.com">text</a>
+                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="400"/>
+                <a class="white" href="something.com">text <strong>Something</strong></a>
               </li>
               <li class="col1 bg-dark-orange">
-                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="150"/>
-                <a class="white" href="something.com">text</a>
+                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="400"/>
+                <a class="white" href="something.com">text <strong>Something</strong></a>
               </li>
               <li class="col2 bg-dark-purple">
-                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="150"/>
-                <a class="white" href="something.com">text</a>
-              </li>
-              <li class="col2 bg-medium-blue">
-                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="150"/>
-                <a class="white" href="something.com">text</a>
-              </li>
-              <li class="col4 bg-light-yellow">
-                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="150"/>
-                <a class="white" href="something.com">text</a>
-              </li>
-              <li class="col2 bg-dark-green">
-                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="150"/>
-                <a class="white" href="something.com">text</a>
+                <img src="http://gui.sunyocc.edu/gui/images/samples/shark-150.png" height="400"/>
+                <a class="white" href="something.com">text <strong>Something</strong></a>
               </li>
             </ul>
-
           </div>
-        </div>
-        <!-- END ADS -->
+					<!-- // END SLIDESHOW -->
 
 
-        <!-- BEGIN noncredit -->
-        <div id="noncredit" class="section clearfix">
+        <!-- BEGIN COURSE LISTING -->
+        <div class="section clearfix bg-pale-blue">
           <div class="container">
-            <div class="section_header">
-              <h3>Personal &amp; Professional Development</h3>
-              <p class="pale-purple">Pursue an interest. Improve your skills. Meet educational requirements.</p>
-              <p>Programs are offered at various times throughout the year and we're always adding more</p>
-            </div>
-            <div class="col3">
-              <ul>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=25730">Baby Sign Language</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5468">Child Abuse Recognition and Reporting</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=29037">Clinical Medical Assistant</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5514">Defensive Driving</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=28114" class="new">Defensive Driving (online)</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5515">Driver Education Program</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=24870">Financial Planning for Retirement</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5455">Fitness - Personal Trainer Certification</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=28108">Fitness - Nutritional Concepts</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=28109">Fitness - Exercise Program Design for Special Populations</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=28445">Fitness - Group Fitness Instruction Certification</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=28110">Fitness - Level I Youth Sports NY Coach Certification</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=28117">Fitness - Successful Program Planning</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=6362">Handgun Safety</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=26890">Healthcare Courses (online)</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=21956">Insurance Agents and Brokers</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=28446">Medical Billing and Coding Program</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5481">Notary Public</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=26886">Notary Signing Agent</a></li>
-              </ul>
-            </div>
-            <div class="col3">
-              <ul>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5574" class="new">Online Courses</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=28444">Pharmacy Technician Program</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5479">Phlebotomy for Certification</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=25728">Phlebotomy for Health Professionals - Non-Clinical</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=28107">Real Estate Agents &amp; Brokers (online)</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5512">SAT Preparation</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5616">School Violence Prevention &amp; Intervention</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=25755">Voiceovers</a></li>
-              </ul>
-              <h4>Certificate Programs</h4>
-              <ul>
-                <li><a href="/index.aspx?menu=164">Early Child Care</a></li>
-                <li><a href="/index.aspx?menu=171">Fire Protection Technology</a></li>
-                <li><a href="/index.aspx?menu=824">Human Services</a></li>
-                <li><a href="/index.aspx?menu=189">Law Enforcement</a></li>
-                <li><a href="/index.aspx?menu=756">Line Mechanic - Utility Worker</a></li>
-                <li><a href="/index.aspx?menu=188">Professional Cooking</a></li>
-                <li><a href="/index.aspx?menu=192">Surgical Technology</a></li>
-                <li><a href="/index.aspx?menu=194">Web Technology</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- END noncredit -->
-        <!-- BEGIN special -->
-        <div id="special" class="section clearfix">
-          <div class="container">
-            <div class="section_header">
-              <h3>Special Programs, Events &amp; Resources</h3>
-              <p class="light-green">Enhancing the educational experience of students and meeting important community needs.</p>
-              <p>A rich variety of unique programs outside of Onondaga's traditional offerings.</p>
-            </div>
-            <div class="col1dot5">
-              <ul>
-                <li><a href="/index.aspx?menu=851&id=14872">Career Pathways Institute</a></li>
-                <li><a href="/index.aspx?menu=851&id=7695">College for Living</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5582">JOBSplus!</a></li>
-                <li><a href="/index.aspx?menu=215">Public Safety Training Center</a></li>
-                <li><a href="/index.aspx?menu=851&id=29060">Senior Course Audit</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=1660">Study Abroad</a></li>
-              </ul>
-            </div>
-            <div class="col1dot5">
-              <ul>
-                <li><a href="/index.aspx?menu=90">Arts Across Campus</a></li>
-                <li><a href="http://library.sunyocc.edu">Coulter Library</a></li>
-                <li><a href="/news.aspx?menu=608&id=17306">Event Space</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=4634">Extension Sites</a></li>
-                <li><a href="http://www.ymcaofgreatersyracuse.org/Southwest/" class="new">Southwest YMCA</a></li>
-                <li><a href="http://www.srcarena.com" class="new">SRC Arena</a></li>
-              </ul>
-            </div>
-            <div class="col3">
-              <!-- START EMBED CODE -->
-              <script type="text/javascript" src="http://galleries.sunyocc.edu/m/embed.js"></script>
-              <div id="album-279">
-              </div>
-              <script type="text/javascript">
-                SlideShowPro({
-                  attributes: {
-                    id: "album-279",
-                    width: 470,
-                    height: 313
-                  },
-                  mobile: {
-                    auto: false
-                  },
-                  params: {
-                    bgcolor: "#000000",
-                    allowfullscreen: true
-                  },
-                  flashvars: {
-                    xmlFilePath: "http://galleries.sunyocc.edu/images.php?album=279",
-                    videoAutoStart: "Off",
-                    navAppearance: "Visible on Rollover",
-                    navLinkAppearance: "Numbers",
-                    transitionStyle: "Blur",
-                    feedbackPreloaderAppearance: "Hidden",
-                    contentScale: "Proportional"
-                  }
-                });
-              </script>
-              <!-- END EMBED CODE -->
-            </div>
-          </div>
-        </div>
-        <!-- END special -->
-        <!-- BEGIN youth -->
-        <div id="youth" class="section clearfix">
-          <div class="container">
-            <div class="section_header">
-              <h3>Youth &amp; Pre-College Programs</h3>
-              <p class="pale-blue">Unique programs for ages 5 to 18.</p>
-              <p>Get a jumpstart on college, prep for the SAT's, go to a summer camp, learn to drive, and more.</p>
-            </div>
-            <div class="col3">
-              <ul>
-                <li><a href="/index.aspx?menu=851&id=5664">College Credit Now!</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=28832" class="new">Pre-Collegiate Institute</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=18330">Liberty Partnership Program</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5512">SAT Preparation</a></li>
-                <li><a href="/index.aspx?menu=851&id=5509">College for Kids</a></li>
-                <li><a href="/index.aspx?menu=851&id=5509">Children's Learning Center Summer Program</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5514">Defensive Driving</a></li>
-                <li><a href="/index.aspx?menu=851&id=28114" class="new">Defensive Driving (online)</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=5515">Driver Education Program</a></li>
-                <li><a href="/index.aspx?menu=851&id=28831">STEM Camp</a></li>
-              </ul>
-            </div>
-            <div class="col3">
 
-              <!-- START EMBED CODE -->
-
-              <script type="text/javascript" src="http://galleries.sunyocc.edu/m/embed.js"></script>
-
-              <div id="album-278">
-
-              </div>
-
-              <script type="text/javascript">
-                SlideShowPro({
-                  attributes: {
-                    id: "album-278",
-                    width: 470,
-                    height: 313
-                  },
-                  mobile: {
-                    auto: false
-                  },
-                  params: {
-                    bgcolor: "#000000",
-                    allowfullscreen: true
-                  },
-                  flashvars: {
-                    xmlFilePath: "http://galleries.sunyocc.edu/images.php?album=278",
-                    videoAutoStart: "Off",
-                    navAppearance: "Visible on Rollover",
-                    navLinkAppearance: "Numbers",
-                    transitionStyle: "Blur",
-                    feedbackPreloaderAppearance: "Hidden",
-                    contentScale: "Proportional"
-                  }
-                });
-              </script>
-
-              <!-- END EMBED CODE -->            </div>
-          </div>
-        </div>
-        <!-- END youth -->
-        <!-- BEGIN degrees -->
-        <div id="degrees" class="section clearfix">
-          <div class="container">
-            <div class="section_header">
-              <h3>Bachelor's &amp; Master's Degrees</h3>
-              <p class="medium-blue">Start here, finish there.</p>
-              <p>Start the path to your Bachelor's or Master's degree at Onondaga through one of our many partnerships.</p>
+            <div class="col2">
+							<div class="pad equal-height">
+								<h3>Pre-College Programs</h3>
+	              <ul>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5574">College Credit Now!</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=25755">Liberty Partnership Program</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5479">PTECH</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=28107">Smart Scholars</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5512">SAT Preparation</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=25728">ACT Preparation</a></li>
+	              </ul>
+								<h3>Youth Programs</h3>
+								<ul>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=25730">Babysitter Training</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=28445">Digital Photography</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5514">Driver Education Program</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=25755">College for Kids</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=25755">College for Living</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=28444">STEM Camp</a></li>
+								</ul>
+							</div>
             </div>
-            <img src="/assets/0/5772/5803/6157/6162/6163/2260ced0-6423-4f31-aae7-9647b6131f53.jpg" />
-            <a href="/index.aspx?menu=851&collgrid=510&id=29053" class="button small bg-medium-red white">Learn More</a>
-          </div>
-        </div>
-        <!-- END degrees -->
-        <!-- BEGIN business -->
-        <div id="business" class="section clearfix">
-          <div class="container">
-            <div class="section_header">
-              <h3>Business &amp; Workforce Development</h3>
-              <p class="light-orange">Dedicated to the development of our community and its economy.</p>
-              <p>Innovative consulting and educational services through partnerships between the College, area companies, organizations, and community experts.</p>
-            </div>
-            <div class="col3">
-              <ul>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=21448">Customized Training</a></li>
-                <li><a href="/index.aspx?menu=851&id=21450">Center for Business &amp; Information Technologies (CBIT)</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=13332">Career Services</a></li>
-                <li><a href="/index.aspx?menu=851&collgrid=510&id=735">Small Business Development Center</a></li>
-              </ul>
-            </div>
-            <div class="col2 figure">
-              <img src="/assets/0/5772/5803/6157/6162/6163/aac47f58-42e3-496d-8334-bedc91c243d3.jpg" />
-              <span class="caption">The Regional Higher Education Center</span>
 
+
+						<div class="col2">
+							<div class="pad bg-hint-blue equal-height">
+								<h3>Personal Enrichment</h3>
+	              <ul>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5574">Basic Computer Skills</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5514">Driver Education Program</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=25755">Wine Basics</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=28444">Cooking &amp; Wine Pairing</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5479">Italian Wine &amp; Cheese Pairing</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=25728">Facebook for Beginners</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5616">Internet for Beginners</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=28107">iPad: Basics</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5512">iPad: Beyond Basics</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=25755">Senior Course Audit</a></li>
+	              </ul>
+							</div>
             </div>
-            <div class="col2 bg-white">
-              <p class="pad medium-grey handwritten textcenter">"The quality of <br />Onondaga's instruction more than met our needs"</p><img src="http://www.sunyocc.edu/assets/0/5772/5803/6157/6162/6163/f62e2b74-7b03-451a-aa81-99678d21645b.jpg" />
+
+
+            <div class="col2">
+							<div class="pad equal-height">
+								<h3>Professional Development</h3>
+	              <ul>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5468">Basic Computer Skills</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=29037">Documents: Creating &amp; Filing</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=28445">JOBSplus!</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=5455">Microsoft EXCEL Level II</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=28108">Microsoft WORD Level II</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=28109">Notary Public</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=28445">Public Safety Training Center</a></li>
+	                <li><a href="/index.aspx?menu=851&collgrid=510&id=24870">Voiceovers (Online)</a></li>
+	              </ul>
+								<p><em>Find more career training programs at our </em><a class="button small bg-medium-orange">Workforce Site</a></p>
+							</div>
             </div>
-          </div>
-        </div>
-        <!-- END business -->
+					</div> <!-- // END CONTAINER -->
+				</div><!-- // END COURSE LISTING -->
+
+
+					<div class="section clearfix bg-hint-orange pad">
+						<div class="container">
+								
+	              <h3><strong>Ed2Go</strong> - <em>nearly 400 Online Courses!</em></a></h3>
+									<ul class="col2">
+		                <li>Accounting and Finance</a></li>
+										<li>Business</a></li>
+										<li>College Readiness</a></li>
+										<li>Computer Applications</a></li>
+									</ul>
+									<ul class="col2">
+										<li>Design and Composition</a></li>
+		                <li>Healthcare and Medical</a></li>
+										<li>Language and Arts</a></li>
+										<li>Law and Legal</a></li>
+									</ul>
+									<ul class="col2">
+										<li>Personal Development</a></li>
+										<li>Teaching and Education</a></li>
+										<li>Technology</a></li>
+										<li>Writing and Publishing</a></li>
+									</ul>
+									<p class="col6 textcenter"><a href="#" class="button small bg-medium-orange">Browse the Ed2Go Catalog</a></p>
+							</div> <!-- // END CONTAINER -->
+						</div><!-- // END ed2go -->
+
+
+				<!-- BEGIN CONTACT INFO -->
+				<div class="pad">
+					<div class="container">
+						<h3>Contact Lifelong Learning</h3>
+						<p>8015 Oswego Rd, Liverpool, NY<br />
+						(315) 498-6000<br />
+						<a href="mailto://lifelong@sunyocc.edu">lifelong@sunyocc.edu</a></p>
+					</div>
+				</div><!-- // END CONTACT INFO -->
+       
       <!-- //end sitelet -->
       <!-- //END COLGRID -->
       <!-- BEGIN PARENT EKTRON FORM -->
@@ -519,52 +411,72 @@
       <p class="dots">&nbsp;</p>
     </div><!-- //END .main -->
         <p class="dots">&nbsp;</p>
-        <!-- INCLUDE GLOBAL FOOTER -->
-        <div id="occfooter">
-          <div class="container">
-            <p class="col3 logotext">Onondaga Community College</p>
-            <p class="col3 text tagline">Explore. Discover. <em>Transform</em>.</p>
-            <div class="col3">
-              <a class="question" href="#">Have a Question?</a>
-              <p>4585 West Seneca Turnpike<br />Syracuse, NY 13219<br />315.498.2622<br /><a href="mailto:occinfo@sunyocc.edu">occinfo@sunyocc.edu</a></p>
-            </div>
-            <div class="col1dot5">
-              <ul>
-                <li><a href="#">About the College</a></li>
-                <li><a href="#">Visit the Campus</a></li>
-                <li><a href="#">Maps &amp; Directions</a></li>
-                <li><a href="#">Extension Sites</a></li>
-                <li><a href="#">Hours of Operation</a></li>
-              </ul>
-            </div>
-            <div class="col1dot5">
-              <ul>
-                <li><a href="#">Employment Opportunities</a></li>
-                <li><a href="#">For the Media</a></li>
-                <li><a href="#">Event Space Available</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
-            <p class="dots">&nbsp;</p>
-            <a href="#index" class="follow-me bottom-right back-to-top">Top</a>
-          </div> <!-- end container -->
-        </div> <!-- end footer -->
+    <!-- INCLUDE GLOBAL FOOTER -->
+    <div id="occfooter">
+      <div class="container">
+      <p class="col3 logotext">Onondaga Community College</p>
+      <p class="col3 tagline">Explore. Discover. <em>Transform</em>.</p>
+      <div class="col3">
+        <p>4585 West Seneca Turnpike<br />Syracuse, NY 13215<br />315.498.2622<br /><a href="mailto:occinfo@sunyocc.edu">occinfo@sunyocc.edu</a></p>
+        <p><a class="livechat" href="#">Live Chat</a></p>
+        <div class="social">
+          <ul>
+            <li><a href="http://www.facebook.com/home.php?#/pages/Syracuse-NY/Onondaga-Community-College/44325319466" id="facebook">Facebook</a></li>
+            <li><a href="http://twitter.com/onondagacc" id="twitter">Twitter</a></li>
+            <li><a href="http://www.instagram.com/onondagacc" id="instagram">Instagram</a></li>
+            <li><a href="http://www.flickr.com/photos/onondagacc" id="flickr">Flickr</a></li>
+            <li><a href="http://www.youtube.com/onondagacc" id="youtube">YouTube</a></li>
+            <li><a id="linkedin" href="http://www.linkedin.com/edu/onondaga-community-college-20262" title="LinkedIn">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col1dot5">
+        <ul>
+          <li><a href="#">About the College</a></li>
+          <li><a href="#">Visit the Campus</a></li>
+          <li><a href="#">Maps &amp; Directions</a></li>
+          <li><a href="#">Extension Sites</a></li>
+          <li><a href="#">Hours of Operation</a></li>
+        </ul>
+      </div>
+      <div class="col1dot5">
+        <ul>
+          <li><a href="#">Employment Opportunities</a></li>
+          <li><a href="#">For the Media</a></li>
+          <li><a href="#">Event Space Available</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <p class="dots">&nbsp;</p>
+    </div> <!-- end container -->
+  </div> <!-- end footer -->
+  <!-- INCLUDE WWW SCRIPTS -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4758467-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script type="text/javascript" src="../../gui/js/jquery.js"></script>
+  <script type="text/javascript" src="../../gui/js/jqueryui.js"></script>
+  <script type="text/javascript" src="../../gui/js/instafeed.js"></script>
+  <script type="text/javascript" src="../../gui/js/tools.js"></script>
+  <script type="text/javascript" src="../../occ_global/js/occ_tools.js"></script>
+  <script type="text/javascript" src="http://galleries.sunyocc.edu/m/embed.js"></script>
 
-      <!-- INCLUDE WWW SCRIPTS -->
-      <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-4758467-2']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      </script>
-      <script type="text/javascript" src="../../gui/js/jquery.js"></script>
-      <script type="text/javascript" src="../../gui/js/jqueryui.js"></script>
-      <script type="text/javascript" src="../../gui/js/tools.js"></script>
-      <script type="text/javascript" src="../../occ_global/js/occ_tools.js"></script>
-      <script type="text/javascript" src="http://galleries.sunyocc.edu/m/embed.js"></script>
-    </body>
-    </html>
+  <script type="text/javascript">
+    var userFeed = new Instafeed({
+      get: 'user',
+      userId: 500141408,
+      limit:'1',
+      template: '<a href="{{link}}"><img src="{{model.images.standard_resolution.url}}" alt="" width="310" height="310" /><span class="instagram-caption"><span class="instagram-likes-bar"><span class="instagram-heart">{{model.likes.count}}</span><span class="instagram-comments">{{model.comments.count}}</span></span>{{caption}}</span></a>',      
+      accessToken: '500141408.467ede5.757281a6ade441e4b465ea1861c92739'
+    });
+    userFeed.run();
+  </script>
+</body>
+</html>

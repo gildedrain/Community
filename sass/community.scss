@@ -1,0 +1,166 @@
+@import "compass/css3";
+/* Requires:occ_global.css,gui.css,jqueryui.css
+/* occ_global overrides */
+#aside, #section, #index .push-menu-opener {
+	display: none;
+}
+/* remove page top tile graphic for homepage */
+body {
+	font-family: 'open sans', gill sans, verdana, sans-serif;
+	font-weight: 300;
+	margin: 0;
+	background-color: #FFF;
+	background-position: 0 -148px;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top,  rgba(20,41,60,1) 0, rgba(78,146,206,1) 300px, rgba(255,255,255,1) 600px); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0,rgba(20,41,60,1)), color-stop(300px,rgba(78,146,206,1)), color-stop(600px,rgba(255,255,255,1))); /* Chrome,Safari4+ */ background-image: -webkit-linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* Chrome10+,Safari5.1+ */ background-image: -o-linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* Opera 11.10+ */ background-image: -ms-linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* IE10+ */ background-image: linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* W3C */
+}
+.ie7 body, .ie8 body, .ie9 body {
+	background-image: url(../images/bg_tile.jpg);
+	background-repeat: repeat-x;
+}
+/* HIDE STUFF */
+#globalnav, #aside {
+	display: none;
+}
+.main {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+.menu ul ul {
+	display: none;
+}
+/* H2 MENU TITLE */
+#menutitle {
+	float:left;
+	margin: 0;
+	padding-top: 1.25em;
+	font-size: 3em;
+	color: #FFF;
+	font-weight: 300;
+	text-shadow: 0 0 0px #000;
+}
+/* NAV + INTRO BLURB */
+.intro {
+	margin: .5em 0 0 0;
+}
+.blurb {
+	float:right;
+	width:60%;
+	text-align: left;
+	margin: 1em 0 0 0;
+	font-size: 1.5em;
+	clear: right;
+}
+.blurb p {
+	line-height: 1.5em;
+}
+.ie7 .blurb,.ie8 .blurb,.gecko .blurb {
+	font-size: 1.25em;
+}
+.gecko .blurb p {
+	line-height: 2em;
+}
+.blurb span {
+	display: inline-block;
+	color: #1799fe;
+	padding: .25em  .5em .25em .5em;
+	background: #000;
+	box-shadow: 0 1px 6px #555;
+	line-height: 1.3;
+}
+.blurb em {
+	font-style: normal;
+	color: #fff;
+}
+.bg_slideshow {
+	min-height:400px;
+	margin-bottom:1em;
+}
+.section {
+	border-top: 1px solid rgba(0,0,0,.15);
+	width: 100%;
+
+}
+
+
+.section ul {
+	list-style: none;
+	padding: 0;
+}
+.section li {
+	line-height: 1.1em;
+	margin-bottom: 1em;
+}
+.section ul ul {
+	padding:1em 0 0 1em;
+}
+.section li li {
+	margin-bottom:.25em;
+}
+.section a:hover {
+	color: #000;
+}
+/* SPECIAL TYPOGRAPHY */
+h3 {
+	font-size: 1.1em;
+	font-weight: 600;
+	color: #FFF;
+	padding: .25em  .5em .25em .5em;
+	background: #000;
+	line-height: 1.3;
+}
+h3 em {
+	color:#1179fe;
+	font-weight:200;
+}
+.new:after {
+	content: 'NEW!';
+	color: #FFF;
+	display: inline-block;
+	background: #ee0000;
+	padding: 0 .4em 0 .4em;
+	margin: 0 0 0 .75em;
+	font-size: .75em;
+	font-weight: 700;
+	line-height: 1.75em
+}
+.handwritten {
+	font-family: "Nothing You Could Do";
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+
+/* move the main content area up */
+#section {
+	margin-top: 3em;
+}
+#section.hasmenu {
+	float: none;
+	width: auto;
+}
+
+
+@media all and (max-width:970px) {
+	#index .header-menu-opener {
+		display: inline-block;
+		top: -50px;
+	}
+	.header .formbox {
+		top: -30px;
+	}
+
+}
+@media all and (max-width:595px) {
+  
+	#index .header-menu-opener {
+		top: -30px;
+	}
+	#index #occlogo {
+		margin-left: 80px;
+	}
+	#index .header .formbox {
+		top: 0px;
+	}
+
+}
