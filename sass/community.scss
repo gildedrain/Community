@@ -10,7 +10,7 @@ body {
 	font-weight: 300;
 	margin: 0;
 	background-color: #FFF;
-	background-position: 0 -148px;
+	background-position: 0 -48px;
 	background-repeat: repeat-x;
 	background-image: -moz-linear-gradient(top,  rgba(20,41,60,1) 0, rgba(78,146,206,1) 300px, rgba(255,255,255,1) 600px); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0,rgba(20,41,60,1)), color-stop(300px,rgba(78,146,206,1)), color-stop(600px,rgba(255,255,255,1))); /* Chrome,Safari4+ */ background-image: -webkit-linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* Chrome10+,Safari5.1+ */ background-image: -o-linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* Opera 11.10+ */ background-image: -ms-linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* IE10+ */ background-image: linear-gradient(top,  rgba(20,41,60,1) 0,rgba(78,146,206,1) 300px,rgba(255,255,255,1) 600px); /* W3C */
 }
@@ -32,7 +32,6 @@ body {
 }
 /* H2 MENU TITLE */
 #menutitle {
-	float:left;
 	margin: 0;
 	padding-top: 1.25em;
 	font-size: 3em;
@@ -45,20 +44,15 @@ body {
 	margin: .5em 0 0 0;
 }
 .blurb {
-	float:right;
-	width:60%;
 	text-align: left;
-	margin: 1em 0 0 0;
+	margin: 1em 0 1em 0;
 	font-size: 1.5em;
-	clear: right;
-}
-.blurb p {
 	line-height: 1.5em;
 }
 .ie7 .blurb,.ie8 .blurb,.gecko .blurb {
 	font-size: 1.25em;
 }
-.gecko .blurb p {
+.gecko .blurb {
 	line-height: 2em;
 }
 .blurb span {
@@ -77,13 +71,13 @@ body {
 	min-height:400px;
 	margin-bottom:1em;
 }
+.bg_slideshow a {
+	display:inline-block;
+}
 .section {
 	border-top: 1px solid rgba(0,0,0,.15);
 	width: 100%;
-
 }
-
-
 .section ul {
 	list-style: none;
 	padding: 0;
@@ -125,12 +119,6 @@ h3 em {
 	font-weight: 700;
 	line-height: 1.75em
 }
-.handwritten {
-	font-family: "Nothing You Could Do";
-	font-size: 1.5em;
-	margin-bottom: 0;
-}
-
 /* move the main content area up */
 #section {
 	margin-top: 3em;
@@ -139,8 +127,6 @@ h3 em {
 	float: none;
 	width: auto;
 }
-
-
 @media all and (max-width:970px) {
 	#index .header-menu-opener {
 		display: inline-block;
