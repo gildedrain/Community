@@ -71,9 +71,6 @@ body {
 	min-height:400px;
 	margin-bottom:1em;
 }
-.bg_slideshow a {
-	display:inline-block;
-}
 .section {
 	border-top: 1px solid rgba(0,0,0,.15);
 	width: 100%;
@@ -135,7 +132,13 @@ h3 em {
 	.header .formbox {
 		top: -30px;
 	}
-
+	.bg_slideshow {
+		max-height:240px;
+		min-height:240px;
+	}
+	.bg_slideshow li {
+		max-height:240px;
+	}
 }
 @media all and (max-width:595px) {
   
@@ -148,5 +151,11 @@ h3 em {
 	#index .header .formbox {
 		top: 0px;
 	}
-
+	.bg_slideshow {
+		height:300px;
+		min-height:auto;
+	}
+	.bg_slideshow li {
+		max-height:240px;
+	}
 }
